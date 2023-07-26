@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Para ocultar cualquier desbordamiento del contenido */
+}
+
+canvas {
+    pointer-events: none; /* Para que el canvas no interfiera con los eventos del video */
+}
+
+#videoElement {
+    z-index: 0;
+}
+
+#videoCanvasContainer {
+    position: relative;
+    z-index: 1; /* Ajusta el índice Z para asegurarte de que el canvas esté por encima del video */
+}
+
